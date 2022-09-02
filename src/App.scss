@@ -1,0 +1,15 @@
+@use './sass/variables';
+
+* {
+  font-family: variables.$ff;
+  padding: 0;
+  margin: 0;
+}
+
+.darkMode {
+  background-color: variables.$dark-background;
+}
+
+// .app__body {
+//   background-color: variables.$light-background;
+// }

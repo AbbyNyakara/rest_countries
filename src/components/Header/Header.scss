@@ -1,0 +1,27 @@
+@use '../../sass/variables';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: variables.$light-elements;
+  box-shadow: variables.$light-mode-shadow;
+  background-color: variables.$light-elements;
+}
+
+.header__logo {
+  font-size: 1.8rem;
+}
+
+.header__mode-changer {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.header__mode {
+  font-weight: variables.$bold;
+}

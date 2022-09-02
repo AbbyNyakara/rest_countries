@@ -1,0 +1,42 @@
+@use '../../sass/variables';
+
+.filter {
+  margin-top: 50px;
+  padding: 0 20px;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  // background-color: variables.$light-elements;
+}
+
+.filter_search_countries,
+.search__filter {
+  background-color: variables.$light-elements;
+  box-shadow: variables.$light-mode-shadow;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search__icon {
+  padding-left: 10px;
+}
+
+select {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: variables.$normal;
+}
+
+.filter__countries {
+  padding: 5px;
+}
+
+
+

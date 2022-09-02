@@ -1,0 +1,77 @@
+@use '../../sass/variables';
+
+.countryDetail {
+  padding: 50px;
+}
+
+.countryDetail__backButton {
+  display: flex;
+  gap: 15px;
+  padding: 10px 10px;
+  margin-bottom: 50px;
+  border: none;
+  outline: none;
+  box-shadow: variables.$light-mode-shadow;
+  background-color: variables.$light-elements;
+
+  .arrow-icon {
+    font-size: 18px;
+  }
+}
+
+.countryDetail__info {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.countryDetail__left {
+  flex: 0.5;
+  img {
+    width: 100%;
+    max-height: 350px;
+  }
+}
+
+.countryDetail__right {
+  flex: 0.5;
+  h2 {
+    padding-bottom: 20px;
+  }
+}
+
+.countryDetail__more {
+  display: flex;
+  gap: 40px;
+  
+  p {
+    font-weight: variables.$bold;
+  }
+
+  span {
+    color: variables.$light-text-inputs;
+    font-weight: variables.$normal;
+    padding-left: 5px;
+  }
+}
+
+.countyDetail__bottom {
+  margin-top: 30px;
+  display: flex;
+}
+
+.border__text {
+  font-weight: variables.$bold;
+  padding-right: 10px;
+}
+
+.border__countries {
+  display: flex;
+  gap: 10px;
+
+  p {
+    border: 1px solid variables.$light-text-inputs;
+    padding: 2px;
+  }
+}
