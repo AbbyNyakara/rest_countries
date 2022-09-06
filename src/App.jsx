@@ -7,26 +7,25 @@ import CountryDetail from './components/CountryDetail/CountryDetail';
 import './App.scss';
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
-  
+  // const [darkMode, setDarkMode] = useState(false);
 
-  function handleClick() {
-    setDarkMode((prevState) => !prevState)
-  }
+  // function handleClick() {
+  //   setDarkMode((prevState) => !prevState)
+  // }
 
   return (
-    <div className={`app ${darkMode ? 'darkmode' : ''} `}>
+    <div className='app'>
     <Router>
-      <Header onClick={handleClick} darkMode={darkMode}/>
+      <Header/>
       <Routes>
         <Route path="/" 
         element={
         <div className="app__body">
-          <Filter darkMode={darkMode}/>
-          <Country darkMode={darkMode} />
+          <Filter/>
+          <Country />
         </div>}
         />
-        <Route path="/country" element={<CountryDetail darkMode={darkMode}/>}/>
+        <Route path="/country/:name" element={<CountryDetail/>}/>
       </Routes>
     </Router>
     </div>

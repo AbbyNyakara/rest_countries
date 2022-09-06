@@ -1,5 +1,9 @@
 @use '../../sass/variables';
 
+* {
+  text-decoration: none;
+}
+
 .countryDetail {
   padding: 50px;
 }
@@ -32,6 +36,7 @@
     width: 100%;
     max-height: 350px;
   }
+  box-shadow: variables.$light-mode-shadow;
 }
 
 .countryDetail__right {

@@ -8,7 +8,6 @@ const Filter = () => {
   const inputRef = useRef(null);
   const regionRef = useRef(null);
 
-
   function handleInputChange(){
     const newSearchTerm = inputRef.current.value;
     dispatch(countriesActions.updateSearchTerm(newSearchTerm))
@@ -29,12 +28,12 @@ const Filter = () => {
       </div>
       <div className="search__filter">
         <select className='select_filter' ref={regionRef} onChange={handleRegionChange}>
-          <option className="filter__countries" >Filter by Region</option>
-          <option className="filter__countries" >Africa</option>
-          <option className="filter__countries" >America</option>
-          <option className="filter__countries" >Asia</option>
-          <option className="filter__countries" >Europe</option>
-          <option className="filter__countries" >Oceania</option>
+          <option className="filter__countries" value="Filter by Region" >Filter by Region</option>
+          <option className="filter__countries" value ="Africa" >Africa</option>
+          <option className="filter__countries" value = "America">America</option>
+          <option className="filter__countries" value = "Asia">Asia</option>
+          <option className="filter__countries" value="Europe">Europe</option>
+          <option className="filter__countries" value = "Oceania">Oceania</option>
         </select>
       </div>
     </div>

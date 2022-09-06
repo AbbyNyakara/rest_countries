@@ -10,6 +10,10 @@
   grid-gap: 40px;
 }
 
+.link {
+  color: variables.$dark-elements;
+}
+
 .country__card {
   background-color: variables.$light-elements;
   box-shadow: variables.$light-mode-shadow;
